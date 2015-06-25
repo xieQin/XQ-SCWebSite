@@ -53,7 +53,8 @@ module.exports = (grunt)->
                     "src/**/*.coffee", 
                     "src/**/*.less", 
                     "src/**/*.html", 
-                    "index.html", 
+                    "index.html",
+                    "about.html",
                     "test/**/*.coffee", 
                     "test/**/*.html"
                 ]
@@ -62,7 +63,7 @@ module.exports = (grunt)->
         less:    
             dev:
                 files:
-                    "bin/css/main.css": ["src/less/main.less"]
+                    "bin/css/index.css": ["src/less/index.less"]
 
 
         uglify:
@@ -78,7 +79,7 @@ module.exports = (grunt)->
         cssmin:    
             build:
                 files:
-                    "dist/css/main.css": ["bin/css/main.css"]
+                    "dist/css/index.css": ["bin/css/index.css"]
 
         mocha:
             test:
@@ -112,6 +113,12 @@ module.exports = (grunt)->
         index = index.replace "<script src=\"//localhost:35729/livereload.js\"></script>", ""
         fs.writeFileSync "dist/index.html", index
 
+    grunt.registerTask "about", ->
+        about = fs.readFileSync "about.html", "utf-8"
+        about = about.replace /bin\//g, ""
+        about = about.replace "<script src=\"//localhost:35729/livereload.js\"></script>", ""
+        fs.writeFileSync "dist/about.html", about
+
     grunt.registerTask "build", ->
         grunt.task.run [
             "clean:bin"
@@ -120,6 +127,7 @@ module.exports = (grunt)->
             "less" 
             "uglify"
             "cssmin"
-            "copy"
+            # "copy"
             "index"
+            "about"
         ]

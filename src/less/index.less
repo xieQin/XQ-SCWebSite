@@ -1,0 +1,301 @@
+@index-bg : "../../assets/images/index-bg.png";
+@header-bg : "../../assets/images/logo.png";
+@phone-bg : "../../assets/images/phone.png";
+@index-business : "../../assets/images/index-business.png";
+@index-culture : "../../assets/images/index-culture.png";
+@about-bg : "../../assets/images/about-bg.png";
+@about-business : "../../assets/images/about-business.png";
+@about-culture : "../../assets/images/about-culture.png";
+@about-contact : "../../assets/images/about-contact.png";
+
+@index-bg-color: #e2e2e2;
+@header-bg-color: #fff;
+@border-b-color: #c90b14;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
+	background: @index-bg-color; 
+}
+li {list-style: none;}
+.clearfix {
+	display: table;
+	content: " ";
+	clear: both;
+	zoom: 1;
+}
+.hidden {display: none;}
+#header {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: url(@header-bg) no-repeat;
+	background-position: center;
+	background-color: @header-bg-color;
+	.header-phone {
+		position: absolute;
+		top: 14px;
+		right: 15px;
+		width: 170px;
+		height: 32px;
+		background: url(@phone-bg) no-repeat;
+	}
+	.nav .nav-item {
+		float: left;
+		width: 100px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 18px;
+		color: #333;
+		text-align: center;
+		cursor: pointer;
+		vertical-align: middle;
+		border-bottom: 3px solid transparent;
+	}
+	.nav .nav-item.active {
+		border-bottom: 3px solid @border-b-color;
+	}
+	.nav .nav-item:hover {
+		.nav .nav-item.active
+	}
+	.nav-second:hover .nav-second-class {
+		display: block;
+	}
+	.nav-second-class {
+		margin-top: 3px;
+		display: none;
+	}
+	.nav-second-class-item {
+		position: relative;
+		background-color: #ededed;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+		border-bottom: 1px solid #ccc;
+	}
+	.nav-second-class-item:hover {
+		background-color: #fff;
+	}
+	.nav-second-class-item .nav-third-class {
+		display: none;
+		position: absolute;
+		left: 100px;
+		top: 0;
+	}
+	.nav-third:hover .nav-third-class {
+		display: block;
+	}
+	.nav-third-class-item {
+		margin-left: 2px;
+		width: 100px;
+		height: 40px;
+		background-color: #ededed;
+	}
+	.nav-third-class-item:hover {
+		background-color: #fff;
+	}
+}
+.wrap {
+	width: 100%;
+	height: 600px;
+	background: url(@index-bg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#footer {
+	position: relative;
+	width: 100%;
+	height: 120px;
+	background: @index-bg-color;
+	.list {
+		position: absolute;
+		left: 50%;
+		width: 1120px;
+		height: 140px;
+		margin-top: -70px;
+		margin-left: -560px;
+		background-color: #fff;
+	}
+	.list .box {
+		float: left;
+		width: 560px;
+		height: auto;
+	}
+	.list .box.box-business {
+		background: url(@index-business) no-repeat;
+		background-position: left;
+	}
+	.list .box.box-culture {
+		background: url(@index-culture) no-repeat;
+		background-position: left;
+	}
+	.box-section {
+		margin-left: 280px;
+		width: 280px;
+		height: 140px;
+	}
+	.box-header {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 15px;
+		line-height: 35px;
+		font-weight: bold;
+	}
+	.box-text {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 13px;
+		line-height: 25px;
+		color: #333;
+	}
+	.footer-info {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		text-align:center;
+		color: #666;
+		font-family: "Microsoft YaHei";
+	}
+}
+
+.about-bg {
+	width: 100%;
+	height: 300px;
+	background: url(@about-bg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.about-wrap {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+.about-section {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	height: 400px;
+	// background: url(@about-contact) no-repeat;
+	// background-size: 65%;
+	// background-position: center;
+}
+.about-leftbar-bg {
+	position: absolute;
+	left: 0;
+	top: -50px;
+	width: 150px;
+	height: 50px;
+	background-color: #e8e8e8;
+	opacity: 0.5;
+}
+.about-leftbar {
+	float: left;
+	width: 150px;
+	height: 380px;
+	background-color: #e8e8e8;
+}
+.about-leftitem {
+	font-size: 18px;
+	cursor: pointer;
+	line-height: 35px;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 20px;
+	color: #333;
+	vertical-align: middle;
+}
+.about-leftitem.active {
+	color: #fff;
+	background-color: #c90a15;
+}
+.about-content {
+	float: left;
+	width: 850px;
+	height: 450px;
+}
+.about-contact-bg {
+	float: left;
+	width: 600px;
+	height: 400px;
+	background: url(@about-contact) no-repeat;
+	background-size: 100%;
+}
+.about-contact-area {
+	float: left;
+	margin-top: 20px;
+	width: 250px;
+	height: 380px;
+}
+.about-contact-area .item {
+	border-bottom: 1px solid #ccc;
+}
+.about-contact-area .item .header {
+	font-size: 14px;
+	line-height: 30px;
+}
+.about-contact-area .item .text {
+	font-size: 12px;
+	color: #666;
+	line-height: 25px;
+}
+.about-contact-area .item-bottom .header {
+	font-size: 14px;
+	line-height: 30px;
+}
+.about-contact-area .item-bottom .text {
+	font-size: 12px;
+	color: #666;
+	line-height: 25px;
+}
+.about-content-bg {
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 300px;
+	height: 200px;
+}
+.about-business .about-content-bg {
+	background: url(@about-business) no-repeat;
+}
+.about-culture .about-content-bg {
+	background: url(@about-culture) no-repeat;
+}
+.about-content-section {
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	width: 500px;
+	height: 380px;
+}
+.about-business .about-content-section p {
+	color: #666;
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.about-business .about-content-section p strong {
+	color: #333;
+}
+.about-culture .about-content-section p {
+	font-family: "Arial";
+	color: #c6c6c6;
+	margin-bottom: 10px;
+}
+.about-footer {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	.footer-info {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		text-align:center;
+		color: #666;
+		font-family: "Microsoft YaHei";
+	}
+}
