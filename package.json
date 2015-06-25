@@ -1,0 +1,32 @@
+{
+  "name": "FEB",
+  "version": "0.1.0",
+  "description": "Front End Boilerplate",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [],
+  "author": "livoras",
+  "license": "MIT",
+  "devDependencies": {
+    "backbone": "^1.1.2",
+    "chai": "*",
+    "coffee-script": "*",
+    "coffeeify": "*",
+    "grunt": "*",
+    "grunt-browserify": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-mocha": "*",
+    "jquery": "^2.1.4",
+    "mocha": "*",
+    "requirejs": "^2.1.17",
+    "sinon": "*",
+    "sinon-chai": "*"
+  }
+}
