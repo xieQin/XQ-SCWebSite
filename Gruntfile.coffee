@@ -127,6 +127,12 @@ module.exports = (grunt)->
         bsy = bsy.replace "<script src=\"//localhost:35729/livereload.js\"></script>", ""
         fs.writeFileSync "dist/bsy.html", bsy
 
+    grunt.registerTask "rongwan", ->
+        rongwan = fs.readFileSync "rongwan.html", "utf-8"
+        rongwan = rongwan.replace /bin\//g, ""
+        rongwan = rongwan.replace "<script src=\"//localhost:35729/livereload.js\"></script>", ""
+        fs.writeFileSync "dist/rongwan.html", rongwan
+
     grunt.registerTask "build", ->
         grunt.task.run [
             "clean:bin"
@@ -139,4 +145,5 @@ module.exports = (grunt)->
             "index"
             "about"
             "bsy"
+            "rongwan"
         ]

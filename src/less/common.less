@@ -1,0 +1,311 @@
+@bsy-logo : "../../assets/images/bsy-logo.png";
+@bsy-bg : "../../assets/images/bsy-bg.png";
+@bsy-co : "../../assets/images/bsy-co.png";
+@bsy-intro : "../../assets/images/bsy-intro.png";
+@bsy-color : #892b40;
+
+@rongwan-logo : "../../assets/images/rongwan-logo.png";
+@rongwan-bg : "../../assets/images/rongwan-bg.png";
+@rongwan-intro : "../../assets/images/rongwan-intro.png";
+@rongwan-company : "../../assets/images/rongwan-company.png";
+@rongwan-color: #326186;
+
+@download-1 : "../../assets/images/download-1.png";
+@download-2 : "../../assets/images/download-2.png";
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
+}
+.clearfix {
+	display: table;
+	content: " ";
+	clear: both;
+	zoom: 1;
+}
+.ml70 {
+	margin-left: 70px;
+}
+.ml20 {
+	margin-left: 20px;
+}
+.icon {
+	position: absolute;
+}
+.icon-star {
+	margin-left: -15px;
+	font-style: italic;
+	color: #c90a15;
+	font-size: 10px;
+}
+li {list-style: none;}
+.hidden {display: none;}
+
+.header-logo {
+	width: 100%;
+	height: 60px;
+	margin: 5px 0;
+}
+.header-logo.bsy {
+	background: url(@bsy-logo) no-repeat;
+	background-position: center;
+	background-position-x: center;
+	background-position-y: center;
+}
+.header-logo.rongwan {
+	background: url(@rongwan-logo) no-repeat;
+	background-position: center;
+	background-position-x: center;
+	background-position-y: center;
+}
+.header-bg {
+	width: 100%;
+	height: 400px;
+}
+.header-bg.bsy {
+	background: url(@bsy-bg) no-repeat;
+	background-position: center;
+	background-position-x: center;
+	background-position-y: center;
+}
+.header-bg.rongwan {
+	background: url(@rongwan-bg) no-repeat;
+	background-position: center;
+	background-position-x: center;
+	background-position-y: center;
+}
+.wrap {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+}
+.nav {
+	position: absolute;
+	top: -90px;
+	left: 50%;
+	margin-left: -600px;
+	width: 1200px;
+	height: 90px;
+}
+.nav ul {
+	width: 100%;
+}
+.nav ul li.nav-item {
+	float: left;
+	cursor: pointer;
+	width: 240px;
+	height: 90px;
+	line-height: 90px;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	background: #eaeaea;
+	font-family: "Microsoft YaHei";
+}
+.bsy.nav ul li.nav-item:hover {
+	background: @bsy-color;
+	color: #fff;
+}
+.bsy.nav ul li.nav-item.active {
+	background: @bsy-color;
+	color: #fff;
+}
+.rongwan.nav ul li.nav-item:hover {
+	background: @rongwan-color;
+	color: #fff;
+}
+.rongwan.nav ul li.nav-item.active {
+	background: @rongwan-color;
+	color: #fff;
+}
+.content {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 45px;
+	padding-top: 20px;
+}
+.box {
+	width: 100%;
+	padding-top: 20px;
+	height: auto;
+}
+.box .box-img {
+	float: left;
+	width: 380px;
+	margin-left: -420px;
+	height: 250px;
+}
+.box-img.bsy-intro {
+	background: url(@bsy-intro) no-repeat;
+}
+.box-img.rongwan-intro {
+	background: url(@rongwan-intro) no-repeat;
+}
+.box-img.rongwan-company {
+	background: url(@rongwan-company) no-repeat;
+}
+.box .box-text {
+	float: left;
+	width: 750px;
+	margin-left: 450px;
+	height: auto;
+}
+.box .box-text p {
+	font-size: 14px;
+	color: #666;
+	padding-top: 20px;
+	line-height: 25px;
+}
+.box-header {
+	border-left: 3px solid #c90a15;
+	text-indent: 5px;
+	font-family: "Microsoft YaHei";
+}
+.box-notice {
+	color: #c90a15;
+	font-size: 13px;
+	line-height: 35px;
+	text-indent: 10px;
+}
+.box-form p {
+	padding: 10px 0;
+}
+.box-form .form-item {
+	padding: 10px 0;
+	margin-left: 10px;
+}
+.box-form .justify {
+	position: relative;
+	float: left;
+	width: 60px;
+	margin-right: 15px;
+	line-height: 30px;
+	text-align: justify;
+	text-justify:distribute-all-lines;  /*ie6-8*/
+    text-align-last:justify;  /* ie9*/
+    -moz-text-align-last:justify;  /*ff*/
+    -webkit-text-align-last:justify;  /*chrome 20+*/
+	font-size: 14px;
+}
+.form-radio {
+	margin-top: 10px;
+}
+.form-input	{
+	width: 220px;
+	height: 30px;
+}
+.form-submit {
+	background: #c90a15;
+	color: #fff;
+	margin-left: 75px;
+	outline: none;
+	border: none;
+	width: 110px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.box-p-header {
+	padding-top: 20px;
+	line-height: 35px;
+	text-indent: 10px;
+	color: #333;
+}
+.box-p-text {
+	line-height: 25px;
+	text-indent: 10px;
+	color: #666;
+	font-size: 13px;
+}
+.download-item {
+	float: left;
+	margin-left: 70px;
+	width: 150px;
+	height: 200px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.download-img {
+	width: 82px;
+	height: 82px;
+	margin: 0 auto;
+}
+.download-item p {
+	padding: 10px 0 ;
+	text-align: center;
+	line-height: 25px;
+}
+.download-img.download-1 {
+	background: url(@download-1) no-repeat;
+}
+.download-img.download-2 {
+	background: url(@download-2) no-repeat;
+}
+.download-item .btn {
+	width: 70px;
+	height: 30px;
+	margin-left: 40px;
+	color: #fff;
+	background: #666;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+.download-item .btn.active {
+	background: #c90a15;
+}
+.download-item .btn:hover {
+	background: #c90a15;
+}
+.content-table {
+	width: 970px;
+	height: auto;
+	margin: 0 auto;
+	border-spacing: 0;
+	border: 1px solid #d4d4d4;
+}
+.content-table tr:first-child td {
+	border-top: none;
+}
+.content-table tr td:last-child {
+	border-right: none;
+}
+.content-table tr td {
+	width: 25%;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	border-top: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	color: #666;
+}
+.content-table tr td.expand {}
+.content-table tr td.bold {
+	color: #333;
+	font-weight: bold;
+}
+
+
+
+
+.footer {
+	width: 100%;
+	background: #dbdbdb;
+}
+.footer p {
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+	color: #666;
+	font-family: "Microsoft YaHei, Arial";
+}
